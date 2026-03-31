@@ -75,7 +75,31 @@ Claude Code 会：
 
 ---
 
-## 1.4 它长什么样
+## 1.4 核心架构一览
+
+![Claude Code 核心架构](../diagrams/claude-code-architecture.svg)
+
+Claude Code 的架构分为几个关键层次：
+
+**用户层**：通过 CLI、Desktop 或 Web 界面与系统交互。
+
+**QueryEngine**：核心引擎，负责消息循环、Agent 执行和流式响应处理。
+
+**工具系统**：提供原子操作能力（文件读写、命令执行、代码搜索等）。
+
+**权限系统**：五层权限架构，从会话模式到具体路径/命令级别的细粒度控制。
+
+**MCP 客户端**：连接外部 MCP 服务器（GitHub、Slack、Database 等），扩展工具能力。
+
+**状态管理**：Bootstrap State（全局单例）和 AppState（会话级响应式状态）。
+
+**Context Engineering**：系统提示构建、Memory 系统、CLAUDE.md 项目上下文、Auto-Compact 压缩。
+
+这些组件协同工作，让 Claude Code 能够理解你的意图、安全地执行操作、管理长期上下文。
+
+---
+
+## 1.5 它长什么样
 
 Claude Code 是一个命令行工具，安装后通过 `claude` 命令启动：
 
