@@ -30,7 +30,7 @@ Claude Code 打破了这个认知。
 
 ## 关于本书的源码基础
 
-**2025 年 3 月，Anthropic 官方 Claude Code 的完整 TypeScript 源代码意外泄漏**。这份源码是 `src/` 目录下完整的、未经混淆的工程代码，包含：
+**2026 年 3 月，Anthropic 官方 Claude Code 的完整 TypeScript 源代码意外泄漏**。这份源码是 `src/` 目录下完整的、未经混淆的工程代码，包含：
 
 - 完整的类型定义和接口
 - 真实的业务逻辑与架构决策
