@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+        </marker>
+    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+        </marker>
+    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
+        </marker>
+    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
+        </marker>
+    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
+        </marker>
+    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
+        </marker>
+    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
+        </marker>
+    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
+        </marker>
+  </defs>
+  <rect width="800" height="500" fill="white"/>
+  <text x="400" y="34"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="22" font-weight="bold"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">两层状态架构</text>
+  <rect x="60" y="62" width="680" height="155" rx="12"
+       fill="#dbe4ff" stroke="#1e40af" stroke-width="2.5" />
+  <text x="400" y="84"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="16" font-weight="600"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">Bootstrap State（全局单例）  src/bootstrap/state.ts</text>
+  <rect x="90" y="102" width="620" height="100" rx="8"
+       fill="#a5d8ff" stroke="#3b82f6" stroke-width="2" />
+  <text x="400" y="140"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">sessionId · projectRoot · cwd · totalCostUSD · modelUsage</text>
+  <text x="400" y="163"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">OpenTelemetry providers · 注册的 hooks</text>
+  <text x="650" y="108"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="12" font-weight="normal"
+         fill="#3730a3" text-anchor="middle"
+         dominant-baseline="middle">进程级 · 跨会话持久</text>
+  <path d="M400,218 Q401.3693827525368,243 400,268"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <text x="470" y="244"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#6b7280" text-anchor="middle"
+         dominant-baseline="middle">被 AppState 读取</text>
+  <rect x="60" y="272" width="680" height="155" rx="12"
+       fill="#d3f9d8" stroke="#059669" stroke-width="2.5" />
+  <text x="400" y="294"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="16" font-weight="600"
+         fill="#065f46" text-anchor="middle"
+         dominant-baseline="middle">AppState（React 状态树）  src/state/AppStateStore.ts</text>
+  <rect x="90" y="312" width="620" height="100" rx="8"
+       fill="#b2f2bb" stroke="#059669" stroke-width="2" />
+  <text x="400" y="350"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">messages[] · toolExecutionState · tasks · permissionDialogs</text>
+  <text x="400" y="373"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">fileHistory · UI 状态（权限弹窗、进度等）</text>
+  <text x="648" y="318"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="12" font-weight="normal"
+         fill="#065f46" text-anchor="middle"
+         dominant-baseline="middle">会话级 · 响应式更新</text>
+  <path d="M400,428 Q398.8345594758199,444 400,460"
+       fill="none" stroke="#059669" stroke-width="2.5" 
+       marker-end="url(#arr-059669)" />
+  <text x="400" y="480"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#6b7280" text-anchor="middle"
+         dominant-baseline="middle">UI 渲染（Ink / React）</text>
+</svg>

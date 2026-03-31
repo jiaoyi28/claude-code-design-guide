@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="560" viewBox="0 0 740 560">
+  <defs>
+    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+        </marker>
+    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+        </marker>
+    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
+        </marker>
+    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
+        </marker>
+    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
+        </marker>
+    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
+        </marker>
+    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
+        </marker>
+    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
+        </marker>
+  </defs>
+  <rect width="740" height="560" fill="white"/>
+  <text x="370" y="34"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="22" font-weight="bold"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">Claude Code Agent 循环</text>
+  <rect x="120" y="60" width="500" height="58" rx="10"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2.5" />
+  <text x="370" y="89"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="18" font-weight="600"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">用户输入</text>
+  <path d="M370,119 Q368.10774524607706,134 370,149"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="120" y="153" width="500" height="58" rx="10"
+       fill="#fff3bf" stroke="#92400e" stroke-width="2" />
+  <text x="370" y="182"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="16" font-weight="600"
+         fill="#92400e" text-anchor="middle"
+         dominant-baseline="middle">构建消息列表（含历史）</text>
+  <path d="M370,212 Q369.29528292086013,227 370,242"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="120" y="246" width="500" height="58" rx="10"
+       fill="#c3fae8" stroke="#059669" stroke-width="2" />
+  <text x="370" y="275"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="16" font-weight="600"
+         fill="#059669" text-anchor="middle"
+         dominant-baseline="middle">调用 Claude API（流式）</text>
+  <path d="M370,305 Q370.07605689758117,320 370,335"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="120" y="339" width="500" height="84" rx="10"
+       fill="#dbe4ff" stroke="#3730a3" stroke-width="2" />
+  <text x="370" y="364"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="16" font-weight="600"
+         fill="#3730a3" text-anchor="middle"
+         dominant-baseline="middle">响应解析</text>
+  <text x="370" y="388"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="12" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">文本块 → 流式显示  ·  思考块 → 内部处理  ·  工具调用块 → 执行工具</text>
+  <path d="M370,424 Q368.1304957025162,439 370,454"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="120" y="458" width="500" height="55" rx="10"
+       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
+  <text x="370" y="485"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="600"
+         fill="#6b21a8" text-anchor="middle"
+         dominant-baseline="middle">工具结果回填到消息列表</text>
+  <line x1="622" y1="486" x2="680" y2="420"
+       stroke="#dc2626" stroke-width="2" 
+       marker-end="url(#arr-dc2626)" />
+  <line x1="680" y1="420" x2="680" y2="275"
+       stroke="#dc2626" stroke-width="2" 
+       marker-end="url(#arr-dc2626)" />
+  <line x1="680" y1="275" x2="622" y2="275"
+       stroke="#dc2626" stroke-width="2" 
+       marker-end="url(#arr-dc2626)" />
+  <text x="700" y="350"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#dc2626" text-anchor="start"
+         dominant-baseline="middle">继续？</text>
+  <text x="140" y="533"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#6b7280" text-anchor="start"
+         dominant-baseline="middle">← 无工具调用 / 达到轮次限制 → 返回最终结果</text>
+</svg>

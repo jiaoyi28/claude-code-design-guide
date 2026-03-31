@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <defs>
+    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+        </marker>
+    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+        </marker>
+    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
+        </marker>
+    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
+        </marker>
+    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
+        </marker>
+    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
+        </marker>
+    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
+        </marker>
+    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
+        </marker>
+  </defs>
+  <rect width="900" height="560" fill="white"/>
+  <text x="450" y="34"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="22" font-weight="bold"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">多代理架构：三种模式</text>
+  <rect x="30" y="62" width="255" height="215" rx="12"
+       fill="#dbe4ff" stroke="#3730a3" stroke-width="2" stroke-dasharray="7,4"/>
+  <text x="157" y="82"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="600"
+         fill="#3730a3" text-anchor="middle"
+         dominant-baseline="middle">模式一：子代理</text>
+  <rect x="48" y="98" width="220" height="52" rx="8"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2" />
+  <text x="158" y="124"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">父代理</text>
+  <path d="M158,151 Q159.4598890148429,164.5 158,178"
+       fill="none" stroke="#3730a3" stroke-width="2.5" 
+       marker-end="url(#arr-3730a3)" />
+  <rect x="48" y="183" width="220" height="52" rx="8"
+       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
+  <text x="158" y="209"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#3730a3" text-anchor="middle"
+         dominant-baseline="middle">子代理（独立上下文）</text>
+  <text x="158" y="252"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#6b7280" text-anchor="middle"
+         dominant-baseline="middle">阻塞等待结果</text>
+  <rect x="320" y="62" width="255" height="215" rx="12"
+       fill="#d3f9d8" stroke="#065f46" stroke-width="2" stroke-dasharray="7,4"/>
+  <text x="447" y="82"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="600"
+         fill="#065f46" text-anchor="middle"
+         dominant-baseline="middle">模式二：后台代理</text>
+  <rect x="338" y="98" width="220" height="52" rx="8"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2" />
+  <text x="448" y="124"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">父代理（立即继续）</text>
+  <path d="M448,151 Q446.7206271222617,164.5 448,178"
+       fill="none" stroke="#065f46" stroke-width="2.5" 
+       marker-end="url(#arr-065f46)" />
+  <rect x="338" y="183" width="220" height="52" rx="8"
+       fill="#b2f2bb" stroke="#059669" stroke-width="2" />
+  <text x="448" y="209"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#065f46" text-anchor="middle"
+         dominant-baseline="middle">子代理（后台运行）</text>
+  <text x="448" y="252"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#6b7280" text-anchor="middle"
+         dominant-baseline="middle">完成后通知父代理</text>
+  <rect x="610" y="62" width="255" height="215" rx="12"
+       fill="#fff3bf" stroke="#92400e" stroke-width="2" stroke-dasharray="7,4"/>
+  <text x="737" y="82"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="600"
+         fill="#92400e" text-anchor="middle"
+         dominant-baseline="middle">模式三：Worktree 隔离</text>
+  <rect x="628" y="98" width="220" height="52" rx="8"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2" />
+  <text x="738" y="124"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">父代理（main branch）</text>
+  <path d="M738,151 Q737.5849951368265,164.5 738,178"
+       fill="none" stroke="#92400e" stroke-width="2.5" 
+       marker-end="url(#arr-92400e)" />
+  <rect x="628" y="183" width="220" height="52" rx="8"
+       fill="#ffd8a8" stroke="#d97706" stroke-width="2" />
+  <text x="738" y="209"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#92400e" text-anchor="middle"
+         dominant-baseline="middle">子代理（独立 worktree）</text>
+  <text x="738" y="252"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#6b7280" text-anchor="middle"
+         dominant-baseline="middle">隔离分支，可选合并</text>
+  <rect x="40" y="305" width="820" height="215" rx="12"
+       fill="#f8fafc" stroke="#94a3b8" stroke-width="2" />
+  <text x="450" y="330"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">子代理上下文隔离（Context Isolation）</text>
+  <rect x="58" y="350" width="360" height="150" rx="8"
+       fill="#a5d8ff" stroke="#3b82f6" stroke-width="2" />
+  <text x="238" y="373"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="600"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">父代理 messages[]</text>
+  <text x="238" y="385.75"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">user: Build login + tests</text>
+  <text x="238" y="405.25"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">assistant: Planning approach...</text>
+  <text x="238" y="424.75"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">tool_result: project structure</text>
+  <text x="238" y="444.25"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">summary: 3 tests written ✓</text>
+  <rect x="482" y="350" width="360" height="150" rx="8"
+       fill="#f1f5f9" stroke="#94a3b8" stroke-width="2" />
+  <text x="662" y="373"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="600"
+         fill="#6b7280" text-anchor="middle"
+         dominant-baseline="middle">子代理 messages[] (fresh)</text>
+  <text x="662" y="385.75"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#94a3b8" text-anchor="middle"
+         dominant-baseline="middle">task: Write unit tests for auth</text>
+  <text x="662" y="405.25"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#94a3b8" text-anchor="middle"
+         dominant-baseline="middle">tool_use: read auth.ts</text>
+  <text x="662" y="424.75"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#94a3b8" text-anchor="middle"
+         dominant-baseline="middle">tool_use: write test.ts</text>
+  <text x="662" y="444.25"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#94a3b8" text-anchor="middle"
+         dominant-baseline="middle">→ context discarded after</text>
+  <text x="450" y="515"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#059669" text-anchor="middle"
+         dominant-baseline="middle">父代理只收到摘要，不承担子代理的上下文膨胀</text>
+</svg>

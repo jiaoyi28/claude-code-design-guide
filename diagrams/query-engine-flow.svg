@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="770" viewBox="0 0 740 770">
+  <defs>
+    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+        </marker>
+    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+        </marker>
+    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
+        </marker>
+    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
+        </marker>
+    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
+        </marker>
+    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
+        </marker>
+    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
+        </marker>
+    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
+        </marker>
+  </defs>
+  <rect width="740" height="770" fill="white"/>
+  <text x="370" y="34"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="22" font-weight="bold"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">Query Engine 执行流程</text>
+  <rect x="110" y="60" width="520" height="60" rx="10"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2.5" />
+  <text x="370" y="90"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">submitMessage( userInput )</text>
+  <path d="M370,122 Q368.70414380171667,142.5 370,163"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="110" y="165" width="520" height="75" rx="10"
+       fill="#fff3bf" stroke="#92400e" stroke-width="2.5" />
+  <text x="370" y="191.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#92400e" text-anchor="middle"
+         dominant-baseline="middle">① 预处理用户输入</text>
+  <text x="370" y="216.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">解析斜杠命令 · 处理附件 · 注入 Memory</text>
+  <path d="M370,242 Q369.5227712321118,262.5 370,283"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="110" y="285" width="520" height="75" rx="10"
+       fill="#c3fae8" stroke="#065f46" stroke-width="2.5" />
+  <text x="370" y="311.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#065f46" text-anchor="middle"
+         dominant-baseline="middle">② 构建消息列表</text>
+  <text x="370" y="336.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">历史消息 · 新用户消息 · 系统上下文</text>
+  <path d="M370,362 Q370.1755750525722,382.5 370,403"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="110" y="405" width="520" height="120" rx="10"
+       fill="#dbe4ff" stroke="#3730a3" stroke-width="2.5" stroke-dasharray="7,4"/>
+  <text x="370" y="447"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#3730a3" text-anchor="middle"
+         dominant-baseline="middle">③ 调用 query() 核心循环</text>
+  <text x="370" y="479"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">构建系统提示 → 调用 Claude API（流式）</text>
+  <text x="370" y="497"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">解析响应 → 执行工具调用 → 循环直到完成</text>
+  <path d="M370,527 Q369.5694045833374,550 370,573"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="110" y="575" width="520" height="75" rx="10"
+       fill="#d0bfff" stroke="#6b21a8" stroke-width="2.5" />
+  <text x="370" y="601.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#6b21a8" text-anchor="middle"
+         dominant-baseline="middle">④ 后处理</text>
+  <text x="370" y="626.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">记录 token · 保存会话 · 触发 hooks · 检查压缩</text>
+  <path d="M370,652 Q369.127896914206,672.5 370,693"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="110" y="695" width="520" height="60" rx="10"
+       fill="#b2f2bb" stroke="#14532d" stroke-width="2.5" />
+  <text x="370" y="725"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#14532d" text-anchor="middle"
+         dominant-baseline="middle">⑤ yield 结果给调用方（流式）</text>
+</svg>

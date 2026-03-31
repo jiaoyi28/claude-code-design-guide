@@ -60,25 +60,7 @@ type CanUseToolResult =
 
 权限检查的决策树：
 
-```
-canUseTool(toolName, input)
-    │
-    ├─ 是否在 bypassPermissions 模式？
-    │   └─ 是 → allow
-    │
-    ├─ 工具是否在白名单中？
-    │   └─ 是 → allow
-    │
-    ├─ 工具是否在黑名单中？
-    │   └─ 是 → deny
-    │
-    ├─ 工具是否需要特殊权限？
-    │   ├─ BashTool → 分析命令安全性
-    │   ├─ FileEditTool → 检查路径是否在允许范围内
-    │   └─ 其他 → 根据工具定义判断
-    │
-    └─ 默认 → ask（询问用户）
-```
+![权限检查决策树](../diagrams/permission-decision-tree.svg)
 
 ---
 

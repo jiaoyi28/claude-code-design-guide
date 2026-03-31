@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <defs>
+    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+        </marker>
+    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+        </marker>
+    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
+        </marker>
+    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
+        </marker>
+    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
+        </marker>
+    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
+        </marker>
+    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
+        </marker>
+    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
+        </marker>
+  </defs>
+  <rect width="900" height="650" fill="white"/>
+  <text x="450" y="34"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="22" font-weight="bold"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">五层权限架构</text>
+  <rect x="40" y="62" width="820" height="88" rx="10"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2.5" />
+  <text x="450" y="90"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">层次 1：会话模式（Session Mode）</text>
+  <text x="450" y="122"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">default / acceptEdits / bypassPermissions / plan  —  决定整体权限基调</text>
+  <path d="M450,152 Q448.9110669069967,158.5 450,165"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="80" y="170" width="740" height="88" rx="10"
+       fill="#b2f2bb" stroke="#059669" stroke-width="2.5" />
+  <text x="450" y="198"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#059669" text-anchor="middle"
+         dominant-baseline="middle">层次 2：工具白名单 / 黑名单</text>
+  <text x="450" y="230"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">allowedTools: [FileReadTool...]   deniedTools: [BashTool...]  —  决定哪些工具可用</text>
+  <path d="M450,260 Q450.0656027274631,266.5 450,273"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="120" y="278" width="660" height="88" rx="10"
+       fill="#d0bfff" stroke="#9333ea" stroke-width="2.5" />
+  <text x="450" y="306"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#9333ea" text-anchor="middle"
+         dominant-baseline="middle">层次 3：工具级权限</text>
+  <text x="450" y="338"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">FileReadTool → 自动允许    FileEditTool → 询问    BashTool → 询问</text>
+  <path d="M450,368 Q449.74662294031464,374.5 450,381"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="160" y="386" width="580" height="88" rx="10"
+       fill="#ffd8a8" stroke="#d97706" stroke-width="2.5" />
+  <text x="450" y="414"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#d97706" text-anchor="middle"
+         dominant-baseline="middle">层次 4：操作级权限</text>
+  <text x="450" y="446"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">"ls" → 低风险    "rm -rf" → 高风险必须确认  —  同一工具不同操作分级</text>
+  <path d="M450,476 Q448.13734694462676,482.5 450,489"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="200" y="494" width="500" height="88" rx="10"
+       fill="#ffc9c9" stroke="#dc2626" stroke-width="2.5" />
+  <text x="450" y="522"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="17" font-weight="600"
+         fill="#dc2626" text-anchor="middle"
+         dominant-baseline="middle">层次 5：路径 / 命令级权限</text>
+  <text x="450" y="554"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">allowedWritePaths   deniedWritePaths   allowedBashCommands  —  最细粒度</text>
+  <text x="450" y="614"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="normal"
+         fill="#6b7280" text-anchor="middle"
+         dominant-baseline="middle">安全是默认，便利是可选，控制在用户手中</text>
+</svg>

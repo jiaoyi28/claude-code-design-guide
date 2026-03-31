@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="570" viewBox="0 0 900 570">
+  <defs>
+    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+        </marker>
+    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+        </marker>
+    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
+        </marker>
+    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
+        </marker>
+    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
+        </marker>
+    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
+        </marker>
+    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
+        </marker>
+    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
+        </marker>
+  </defs>
+  <rect width="900" height="570" fill="white"/>
+  <text x="450" y="34"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="22" font-weight="bold"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">工具系统三层架构</text>
+  <rect x="50" y="62" width="800" height="115" rx="12"
+       fill="#dbe4ff" stroke="#3730a3" stroke-width="2" stroke-dasharray="7,4"/>
+  <text x="135" y="79"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#3730a3" text-anchor="start"
+         dominant-baseline="middle">第三层：高阶操作（工具调用工具）</text>
+  <rect x="90" y="92" width="270" height="70" rx="8"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2" />
+  <text x="225" y="115.75"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="normal"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">AgentTool</text>
+  <text x="225" y="138.25"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="normal"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">启动子代理（独立工具集）</text>
+  <rect x="540" y="92" width="260" height="70" rx="8"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2" />
+  <text x="670" y="115.75"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="normal"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">SkillTool</text>
+  <text x="670" y="138.25"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="normal"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">执行预定义工具链</text>
+  <path d="M450,178 Q451.75448478537345,199 450,220"
+       fill="none" stroke="#f59e0b" stroke-width="2.5" 
+       marker-end="url(#arr-f59e0b)" />
+  <text x="510" y="200"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#f59e0b" text-anchor="middle"
+         dominant-baseline="middle">Claude 编排</text>
+  <rect x="50" y="225" width="800" height="115" rx="12"
+       fill="#d3f9d8" stroke="#065f46" stroke-width="2" stroke-dasharray="7,4"/>
+  <text x="130" y="242"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#065f46" text-anchor="start"
+         dominant-baseline="middle">第二层：组合操作（Claude 编排原子操作）</text>
+  <rect x="70" y="258" width="350" height="68" rx="8"
+       fill="#b2f2bb" stroke="#059669" stroke-width="2" />
+  <text x="245" y="282.25"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">找出所有 TODO 并整理</text>
+  <text x="245" y="301.75"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">= GlobTool + FileReadTool + GrepTool</text>
+  <rect x="480" y="258" width="350" height="68" rx="8"
+       fill="#b2f2bb" stroke="#059669" stroke-width="2" />
+  <text x="655" y="282.25"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">重构函数名</text>
+  <text x="655" y="301.75"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">= GrepTool + FileEditTool×N + BashTool</text>
+  <path d="M450,342 Q449.55252017795533,365 450,388"
+       fill="none" stroke="#f59e0b" stroke-width="2.5" 
+       marker-end="url(#arr-f59e0b)" />
+  <text x="510" y="365"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#f59e0b" text-anchor="middle"
+         dominant-baseline="middle">原子组合</text>
+  <rect x="50" y="392" width="800" height="128" rx="12"
+       fill="#e5dbff" stroke="#6b21a8" stroke-width="2" stroke-dasharray="7,4"/>
+  <text x="115" y="409"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#6b21a8" text-anchor="start"
+         dominant-baseline="middle">第一层：原子操作（不可再分）</text>
+  <rect x="68" y="428" width="170" height="70" rx="8"
+       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
+  <text x="153" y="452.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">FileReadTool</text>
+  <text x="153" y="473.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">读一个文件</text>
+  <rect x="258" y="428" width="170" height="70" rx="8"
+       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
+  <text x="343" y="452.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">FileEditTool</text>
+  <text x="343" y="473.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">改一处内容</text>
+  <rect x="448" y="428" width="170" height="70" rx="8"
+       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
+  <text x="533" y="452.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">GrepTool</text>
+  <text x="533" y="473.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">搜索一个模式</text>
+  <rect x="638" y="428" width="170" height="70" rx="8"
+       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
+  <text x="723" y="452.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">BashTool</text>
+  <text x="723" y="473.5"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">执行一条命令</text>
+</svg>

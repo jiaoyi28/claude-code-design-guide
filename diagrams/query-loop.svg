@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="580" viewBox="0 0 800 580">
+  <defs>
+    <marker id="arr-3b82f6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#3b82f6"/>
+        </marker>
+    <marker id="arr-059669" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#059669"/>
+        </marker>
+    <marker id="arr-f59e0b" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#f59e0b"/>
+        </marker>
+    <marker id="arr-dc2626" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#dc2626"/>
+        </marker>
+    <marker id="arr-9333ea" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#9333ea"/>
+        </marker>
+    <marker id="arr-1e40af" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#1e40af"/>
+        </marker>
+    <marker id="arr-374151" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#374151"/>
+        </marker>
+    <marker id="arr-94a3b8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+          <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
+        </marker>
+  </defs>
+  <rect width="800" height="580" fill="white"/>
+  <text x="400" y="34"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="22" font-weight="bold"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">query() 执行循环</text>
+  <rect x="170" y="62" width="460" height="52" rx="8"
+       fill="#fff3bf" stroke="#d97706" stroke-width="2" />
+  <text x="400" y="88"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="600"
+         fill="#92400e" text-anchor="middle"
+         dominant-baseline="middle">turnCount++  ·  检查轮次限制</text>
+  <path d="M400,115 Q400.1942462139407,131.5 400,148"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="170" y="152" width="460" height="80" rx="8"
+       fill="#a5d8ff" stroke="#1e40af" stroke-width="2" />
+  <text x="400" y="177"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="600"
+         fill="#1e40af" text-anchor="middle"
+         dominant-baseline="middle">调用 Claude API（流式）</text>
+  <text x="400" y="200"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">messages  ·  systemPrompt  ·  tools</text>
+  <path d="M400,233 Q401.64192756880544,250.5 400,268"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="170" y="272" width="460" height="80" rx="8"
+       fill="#c3fae8" stroke="#059669" stroke-width="2" />
+  <text x="400" y="295"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="600"
+         fill="#065f46" text-anchor="middle"
+         dominant-baseline="middle">解析流式响应</text>
+  <text x="400" y="318"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="12" font-weight="normal"
+         fill="#374151" text-anchor="middle"
+         dominant-baseline="middle">text → yield 给用户  ·  thinking → 内部处理  ·  tool_use → 收集</text>
+  <path d="M400,353 Q399.81369828778685,370.5 400,388"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <rect x="170" y="392" width="460" height="48" rx="8"
+       fill="#dbe4ff" stroke="#3730a3" stroke-width="2" />
+  <text x="400" y="416"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="15" font-weight="600"
+         fill="#3730a3" text-anchor="middle"
+         dominant-baseline="middle">有工具调用？</text>
+  <line x1="630" y1="416" x2="710" y2="416"
+       stroke="#dc2626" stroke-width="2" 
+       marker-end="url(#arr-dc2626)" />
+  <text x="680" y="406"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="12" font-weight="normal"
+         fill="#dc2626" text-anchor="middle"
+         dominant-baseline="middle">否→结束</text>
+  <path d="M400,440 Q400.9177828282202,460 400,480"
+       fill="none" stroke="#3b82f6" stroke-width="2.5" 
+       marker-end="url(#arr-3b82f6)" />
+  <text x="412" y="460"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#059669" text-anchor="middle"
+         dominant-baseline="middle">是</text>
+  <rect x="170" y="484" width="460" height="52" rx="8"
+       fill="#d0bfff" stroke="#9333ea" stroke-width="2" />
+  <text x="400" y="510"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="14" font-weight="600"
+         fill="#6b21a8" text-anchor="middle"
+         dominant-baseline="middle">并行执行工具调用  ·  工具结果追加到消息列表</text>
+  <line x1="168" y1="510" x2="110" y2="510"
+       stroke="#d97706" stroke-width="2" 
+       marker-end="url(#arr-d97706)" />
+  <line x1="110" y1="510" x2="110" y2="88"
+       stroke="#d97706" stroke-width="2" 
+       marker-end="url(#arr-d97706)" />
+  <line x1="110" y1="88" x2="170" y2="88"
+       stroke="#d97706" stroke-width="2" 
+       marker-end="url(#arr-d97706)" />
+  <text x="80" y="300"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="13" font-weight="normal"
+         fill="#d97706" text-anchor="middle"
+         dominant-baseline="middle">循环</text>
+  <rect x="170" y="550" width="460" height="22" rx="5"
+       fill="#f8fafc" stroke="#94a3b8" stroke-width="1" />
+  <text x="400" y="561"
+         font-family="'Segoe UI',system-ui,sans-serif"
+         font-size="12" font-weight="normal"
+         fill="#6b7280" text-anchor="middle"
+         dominant-baseline="middle">token 预算超出 → 结束循环</text>
+</svg>
